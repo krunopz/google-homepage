@@ -1,0 +1,125 @@
+.container{
+    display:grid;
+    border: none;
+    height: 100%;
+    min-height: 600px;
+    margin: 0;
+    grid-template-areas: "head1 head2 head3"
+                    "main main main"
+                    "search search search"
+                    "void void void"
+                    "footer1 footer1 footer1"
+                    "marketing empty settings";
+    grid-template-rows: 1fr 5fr 1fr 2fr 5% 5%;
+    grid-template-columns: 20% 60% 20%;
+    padding: 0cm;
+    
+}
+.header{
+    grid-area: head2;
+}
+.headerL{
+    grid-area: head1;
+    text-align: left;
+}
+.headerR{
+    grid-area: head3;
+    text-align: right;
+}
+.main{
+    
+    grid-area: main;
+    object-position: bottom;
+    padding-top: 2cm;
+    padding-bottom: 0%;
+    margin-bottom: 20px;
+    
+}
+.search{
+    grid-area: search;
+   
+}
+.void{
+    grid-area: void;
+}
+.footer{
+    grid-area: footer1;
+    background-color: wheat;
+    text-align: left;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+.marketing{
+    grid-area: marketing;
+    background-color: lightgray;
+    text-align: left;
+    border-bottom: 1px gray solid;
+    
+}
+.empty{
+    grid-area: empty;
+    background-color: lightgray;
+    text-align: left;
+    border-bottom: 1px gray solid;
+   
+}
+.settings{
+    grid-area:settings;
+    background-color: lightgray;
+    text-align: right;
+    border-bottom: 1px gray solid;
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+       
+  }
+.right{
+    display: inline-block;
+    align-content: flex-end;
+
+}
+  .crumbs ol {
+    list-style-type: georgian;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+ .crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: ' ';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+.button{
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    font-size: 16px;
+    color: gray;
+    border-radius: 4px;
+  
+}
+.button:hover {
+    background-color: rgb(153, 153, 255);
+    color: black;
+  }
+  #login{
+    background-color: rgb(153, 153, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px white solid;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+.bottom{
+    position: absolute;
+    bottom: 10px;
+}
