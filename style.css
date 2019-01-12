@@ -9,10 +9,12 @@
                     "search search search"
                     "void void void"
                     "footer1 footer1 footer1"
-                    "marketing empty settings";
+                    "marketing marketing marketing";
     grid-template-rows: 1fr 5fr 1fr 2fr 5% 5%;
     grid-template-columns: 20% 60% 20%;
     padding: 0cm;
+    font: 400 13px Arial;
+    color: #555;
     
 }
 .header{
@@ -24,7 +26,7 @@
 }
 .headerR{
     grid-area: head3;
-    text-align: right;
+    
 }
 .main{
     
@@ -44,16 +46,21 @@
 }
 .footer{
     grid-area: footer1;
-    background-color: wheat;
-    text-align: left;
-    border-top: 1px gray solid;
-    border-bottom: 1px gray solid;
+    background-color: #f2f2f2;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    padding-left: 20px;
 }
 .marketing{
     grid-area: marketing;
     background-color: lightgray;
-    text-align: left;
     border-bottom: 1px gray solid;
+    background-color: #f2f2f2;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 5px 0;
     
 }
 .empty{
@@ -76,9 +83,7 @@
     margin-right: auto;
        
   }
-.right{
-    display: inline-block;
-    align-content: flex-end;
+
 
 }
   .crumbs ol {
@@ -119,7 +124,17 @@
     font-size: 16px;
     color: white;
     border-radius: 4px;
+
+}
 .bottom{
     position: absolute;
     bottom: 10px;
+}
+.left{
+    float: left;
+    padding-left: 20px;
+}
+.right{
+    float: right;
+    padding-right: 20px;
 }
